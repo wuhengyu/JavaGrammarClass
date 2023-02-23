@@ -9,8 +9,9 @@ package com.hengyu.www.接口;
  * Desc    :
  */
 
+//public修饰符对于接口来说是多余的
 interface Animal {
-    public void eat();
-    public void travel();
-}
+    void eat();
 
+    void travel();
+}
