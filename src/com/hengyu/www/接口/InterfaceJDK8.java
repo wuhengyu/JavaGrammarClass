@@ -11,7 +11,7 @@ package com.hengyu.www.接口;
 public interface InterfaceJDK8 {
 
     /*接口的普通抽象方法*/
-    public void common(String str);
+    void common(String str);
 
     /*jdk1.8 默认方法:
     允许在已有的接口中添加新方法，而同时又保持了与旧版本代码的兼容性，
@@ -20,7 +20,7 @@ public interface InterfaceJDK8 {
        （如果有必要的话，可以覆盖这个默认实现）。
     接口的默认方法：得到接口的实现类对象，直接用对象的引用.方法名。默认方法可以被实现类覆盖。
     */
-    default public void defaultMethod(String str) {
+    default void defaultMethod(String str) {
         System.out.println("InterfaceJDK8:" + str);
     }
 
@@ -28,8 +28,10 @@ public interface InterfaceJDK8 {
     /*jdk1.8 静态方法：
     允许在已有的接口中添加静态方法，接口的静态方法属于接口本身，不被继承，也不需要提供方法的实现。
         */
-    public static void staticMethod(String str) {
+    static void staticMethod(String str) {
         System.out.println("InterfaceJDK8:" + str);
     }
 
 }
+
+

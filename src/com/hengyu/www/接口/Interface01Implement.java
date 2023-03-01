@@ -24,6 +24,25 @@ interface Interface01 {
     //void dosome2(){};//不可以执行通过，不能有方法体
 }
 
+public class Interface01Implement implements Interface01 {
+
+
+    @Override
+    public int sum(int a, int b) {
+        return 0;
+    }
+
+    @Override
+    public void dosome() {
+
+        System.out.println("dosome");
+    }
+
+    public static void main(String[] args) {
+        Interface01Implement interface01Implement = new Interface01Implement();
+        interface01Implement.dosome();
+    }
+}
 
 
 

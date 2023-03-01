@@ -45,12 +45,22 @@ class NoAbstractImplementInterface3 implements MyMath {
     }
 }
 
-public class AbstractImplementInterface {
+public class AbstractImplementInterface implements MyMath {
     public static void main(String[] args) {
         NoAbstractImplementInterface3 abstractImplementInterface = new NoAbstractImplementInterface3();
         int result1 = abstractImplementInterface.sum(3, 4);
         System.out.println(result1);
         int result2 = abstractImplementInterface.sub(5, 1);
         System.out.println(result2);
+    }
+
+    @Override
+    public int sum(int a, int b) {
+        return a + b;
+    }
+
+    @Override
+    public int sub(int a, int b) {
+        return a * b;
     }
 }
