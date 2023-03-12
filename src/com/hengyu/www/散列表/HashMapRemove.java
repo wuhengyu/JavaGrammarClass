@@ -1,0 +1,34 @@
+package com.hengyu.www.散列表;
+
+import java.util.HashMap;
+
+/**
+ * Date    :2023/3/12 14:02
+ * Author  :Walter
+ * File    : HashMapRemove.java
+ * License :(C)Copyright Walter
+ * Version : 1.0
+ * Desc    :
+ */
+public class HashMapRemove {
+    public static void main(String[] args) {
+        // 创建 HashMap 对象 Sites
+        HashMap<Integer, String> Sites = new HashMap<Integer, String>();
+        // 添加键值对
+        Sites.put(1, "Google");
+        Sites.put(2, "Runoob");
+        Sites.put(3, "Taobao");
+        Sites.put(4, "Zhihu");
+        Sites.remove(1);
+        System.out.println(Sites);
+
+        HashMap<String, String> Sites2 = new HashMap<String, String>();
+        // 添加键值对
+        Sites2.put("one", "Google");
+        Sites2.put("two", "Runoob");
+        Sites2.put("three", "Taobao");
+        Sites2.put("four", "Zhihu");
+        Sites2.remove("one");
+        System.out.println(Sites2);
+    }
+}

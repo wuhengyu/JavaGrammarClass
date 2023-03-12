@@ -28,7 +28,7 @@ interface Animal {
         System.out.println("travel");
     }
 
-    public static void main(String[] args) {
+    public static void MyThreadClass(String[] args) {
         Pig pig = new Pig();
         pig.eat();
         pig.travel();
@@ -48,7 +48,7 @@ abstract class Pig implements Animal {
 //        System.out.println("travel");
 //    }
 
-//    public static void main(String[] args) {
+//    public static void MyThreadClass(String[] args) {
 ////        抽象方法不能实例化
 //        Pig pig = new Pig();
 //        pig.eat();

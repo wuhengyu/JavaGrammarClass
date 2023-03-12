@@ -1,0 +1,2 @@
+我们首先使用FileInputStream和字节数组读取文件，并使用FileOutputStream和字节数组写入文件。然后，我们使用FileReader和字符数组读取文件，并使用FileWriter和字符串写入文件。
+需要注意的是，使用try-with-resources语句可以确保在使用完流之后自动关闭流，这样可以避免忘记关闭流的情况发生。
