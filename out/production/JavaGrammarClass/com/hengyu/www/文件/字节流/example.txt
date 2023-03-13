@@ -1,0 +1,1 @@
+Java字节流是一种用于处理字节数据的输入输出流。它们被称为字节流，因为它们以字节为单位读取和写入数据。Java提供了两个主要的字节流类：InputStream和OutputStream。其中InputStream类用于读取数据，OutputStream类用于写入数据。

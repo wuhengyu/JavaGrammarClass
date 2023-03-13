@@ -9,7 +9,7 @@ package com.hengyu.www.序列化.FastJson;
  * Desc    :
  */
 
-import
+import com.alibaba.fastjson2.*;
 
 class User {
 
