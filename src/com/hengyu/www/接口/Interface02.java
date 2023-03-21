@@ -14,7 +14,7 @@ public interface Interface02 {
     String interfaceVariable = "interfaceVariable String";
     int interfaceInteger = 100;
 
-    //    接口中的成员变量只能是 public static final 类型的
+//    接口中的成员变量只能是 public static final 类型的
 //    被隐式的指定为 public static final 变量
     public static final String interfaceVariable2 = "interfaceVariable String2";
 
@@ -50,4 +50,10 @@ public interface Interface02 {
 
 //    报错，接口抽象方法不能含有方法体
 //    public void abstractMethod(){}
+
+//    接口不能包含静态代码块，但是可以在接口中定义静态方法和静态变量，这些静态成员会在类加载时被初始化
+//    编译报错：java接口中不允许有初始化程序
+//    static {
+//        System.out.println("接口静态代码块!");
+//    }
 }
